@@ -1,5 +1,5 @@
 def fibonacci(array)
-    array = []
+    array = [0,1]
     result = array[0] + array[1] 
     i = 2
 
@@ -15,4 +15,4 @@ def fibonacci(array)
 
 end
 
-fibonacci([1,2])
+fibonacci([0,1])
