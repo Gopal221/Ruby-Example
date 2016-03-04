@@ -12,6 +12,7 @@ def fibonacci(array)
     result
 
     array<< result
+    put array
 
 end
 
