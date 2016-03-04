@@ -3,7 +3,7 @@ def fibonacci(array)
     result = array[0] + array[1] 
     i = 2
 
-    while result < 4_000_000
+    while result < 10
         result += array[i]
 
         i += 1
