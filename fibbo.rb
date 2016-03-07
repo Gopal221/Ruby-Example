@@ -1,19 +1,20 @@
-def fibonacci(array)
-    array = [0,1]
-    result = array[0] + array[1] 
-    i = 2
-
-    while result < 10
-        result += array[i]
-
-        i += 1
-    end
-
-    result
-
-    array<< result
-    put array
-
+def fibonacci()
+  yield(50)
+  return 0
 end
-
-fibonacci([0,1])
+fibonacci() { |x| a=1;
+b=1; 
+c=0; 
+puts a;
+puts b; 
+while(c)
+  c = a + b;
+  b = a;
+  a = c;
+  if(c > x) 
+    break; 
+  else 
+    puts c;
+  end 
+end 
+} 
