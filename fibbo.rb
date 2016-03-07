@@ -1,20 +1,14 @@
-def fibonacci()
-  yield(50)
-  return 0
+puts "How many times?"
+x = gets.chomp.to_i
+
+fibonacci = []
+
+x.times do
+if fibonacci.size == 0 || fibonacci.size == 1
+fibonacci << 1
+else
+fibonacci << fibonacci[-2] + fibonacci[-1]
 end
-fibonacci() { |x| a=1;
-b=1; 
-c=0; 
-puts a;
-puts b; 
-while(c)
-  c = a + b;
-  b = a;
-  a = c;
-  if(c > x) 
-    break; 
-  else 
-    puts c;
-  end 
-end 
-} 
+end
+
+print fibonacci
